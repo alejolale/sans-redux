@@ -1,6 +1,6 @@
 // actions possibles =>
 // { type: 'SWITCH' }
-const lightReducer = (state = 'on', action) => {
+const lightReducer = (state = 'onnn', action) => {
     switch(action.type){
         case 'SWITCH':
             return state === 'on' ? 'off' : 'on';

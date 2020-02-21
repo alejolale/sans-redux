@@ -1,4 +1,5 @@
 import React from 'react';
+import  { connect } from 'react-redux';
 
 const NavBar = ({ light }) => {
     return(
@@ -8,4 +9,9 @@ const NavBar = ({ light }) => {
     )
 }
 
-export default NavBar;
+const mapStatetoProps = state => ({
+    light: state
+ })
+
+const navBarContaier = connect(mapStatetoProps)(NavBar);
+export default navBarContaier;

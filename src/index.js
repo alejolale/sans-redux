@@ -11,8 +11,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// 3 - creation of the store
-const store = createStore(lightReducer);
+// 3 - creation of the store ---> redux dev tool second line
+const store = createStore(lightReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    );
 
 // 4 -  Add the provider into the app & propertie of the store
 ReactDOM.render(<Provider store={store} ><App /></Provider>, document.getElementById('root'));
