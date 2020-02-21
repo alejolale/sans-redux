@@ -1,4 +1,6 @@
 import React from 'react';
+//connecter le composant au store
+import  { connect } from 'react-redux';
 
 const LightComponent = ({ light, onSwitch }) => {
 
