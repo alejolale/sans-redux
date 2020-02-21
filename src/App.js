@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import LightComponent from './LightComponent';
-import NavBar from './NavBar';
+import LightContainer from './LightContainer';
+import NavBarContainer from './NavBarContainer';
 
 const App = () => {
 
@@ -10,8 +10,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar />
-      <LightComponent />
+      <NavBarContainer />
+      <LightContainer />
     </div>
   );
 }
